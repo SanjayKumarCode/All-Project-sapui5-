@@ -1,0 +1,403 @@
+{
+    "header": {
+        "periodInfo": "Information generated for fiscal period Q1 2022"
+    },
+    "tabular_quality": [
+        {
+            "GID": "Z004M02qua",
+            "SUPPLIER_MAIL": "quadaniel.huzioka12@siemens-energy.com",
+            "IFA": "2360521qua"
+        },
+        {
+            "GID": "Z004M02qua",
+            "SUPPLIER_MAIL": "daniel.huzioka12@siemens-energy.qua",
+            "IFA": "236052qua"
+        },
+        {
+            "GID": "qua04M02A3",
+            "SUPPLIER_MAIL": "qua.huzioka12@siemens-energy.com",
+            "IFA": "qua6052181"
+        },
+        {
+            "GID": "Z004M02A4",
+            "SUPPLIER_MAIL": "daniel.huzioka12@siemens-energy.com",
+            "IFA": "236052181"
+        },
+        {
+            "GID": "Z004M02A5",
+            "SUPPLIER_MAIL": "daniel.huzioka12@siemens-energy.com",
+            "IFA": "236052181"
+        },
+        {
+            "GID": "Z004M02A6",
+            "SUPPLIER_MAIL": "daniel.huzioka12@siemens-energy.com",
+            "IFA": "236052181"
+        },
+        {
+            "GID": "Z004M02A7",
+            "SUPPLIER_MAIL": "daniel.huzioka12@siemens-energy.com",
+            "IFA": "236052181"
+        }
+    ],
+    "tabular_logistics": [
+        {
+            "GID": "Z004M02A1x",
+            "SUPPLIER_MAIL": "daniel.huzioka12@siemens-energy.com",
+            "IFA": "236052181"
+        },
+        {
+            "GID": "Z004M02A2",
+            "SUPPLIER_MAIL": "daniel.huzioka12@siemens-energy.com",
+            "IFA": "236052181"
+        },
+        {
+            "GID": "Z004M02A3",
+            "SUPPLIER_MAIL": "daniel.huzioka12@siemens-energy.com",
+            "IFA": "236052181"
+        },
+        {
+            "GID": "Z004M02A4",
+            "SUPPLIER_MAIL": "daniel.huzioka12@siemens-energy.com",
+            "IFA": "236052181"
+        },
+        {
+            "GID": "Z004M02A5",
+            "SUPPLIER_MAIL": "daniel.huzioka12@siemens-energy.com",
+            "IFA": "236052181"
+        },
+        {
+            "GID": "Z004M02A6",
+            "SUPPLIER_MAIL": "daniel.huzioka12@siemens-energy.com",
+            "IFA": "236052181"
+        },
+        {
+            "GID": "Z004M02A7",
+            "SUPPLIER_MAIL": "daniel.huzioka12@siemens-energy.com",
+            "IFA": "236052181"
+        }
+    ],
+    "year_to_date_kpis": [
+        {
+            "label": "Procurement",
+            "data": [
+                {
+                    "kpi": "PVO",
+                    "value": 503940,
+                    "uom": "EUR"
+                }
+            ]
+        },
+        {
+            "label": "Quality",
+            "data": [
+                {
+                    "kpi": "SIR",
+                    "value": 0.22,
+                    "uom": "%"
+                },
+                {
+                    "kpi": "SFR",
+                    "value": 350,
+                    "uom": "ppm"
+                },
+                {
+                    "kpi": "ScNCC Gross",
+                    "value": 0,
+                    "uom": "EUR"
+                }
+            ]
+        },
+        {
+            "label": "Logistics",
+            "data": [
+                {
+                    "kpi": "SDR",
+                    "value": 64.4000,
+                    "uom": "%"
+                },
+                {
+                    "kpi": "SDC",
+                    "value": 99.3222,
+                    "uom": "%"
+                },
+                {
+                    "kpi": "ASRD",
+                    "value": 64.7111,
+                    "uom": "%"
+                }
+            ]
+        }
+
+    ],
+    "kpi_data": [
+        {
+            "id": "procurment",
+            "label": "Procurement",
+            "data_sets": [
+                {
+                    "label": "Purchasing Volumne",
+                    "monthly_data": [
+                        [
+                            "2022-10",
+                            65000
+                        ],
+                        [
+                            "2022-11",
+                            61000
+                        ],
+                        [
+                            "2022-12",
+                            65100
+                        ]
+                    ],
+                    "monthly_data_fields": [
+                        {
+                            "label": "time",
+                            "uom": null
+                        },
+                        {
+                            "label": "PVO",
+                            "uom": "EUR"
+                        }
+                    ],
+                    "yearly_data": [
+                        [
+                            "2020",
+                            165000
+                        ],
+                        [
+                            "2021",
+                            361000
+                        ],
+                        [
+                            "2022",
+                            265100
+                        ]
+                    ],
+                    "yearly_data_fields": [
+                        {
+                            "label": "time",
+                            "uom": null
+                        },
+                        {
+                            "label": "PVO",
+                            "uom": "EUR"
+                        }
+                    ]
+                }
+            ],
+            "tabular_data_sets": [
+                {
+                    "label": "Commodities Breakdown by PVO",
+                    "uom": "EUR",
+                    "columns": [
+                        "Commodity",
+                        "PVO"
+                    ],
+                    "data": [
+                        [
+                            "Machined Parts",
+                            123
+                        ],
+                        [
+                            "GP - Non-commodity material",
+                            2123
+                        ],
+                        [
+                            "GP - Valves and actuators",
+                            1232
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "quality",
+            "label": "Quality",
+            "data_sets": [
+                {
+                    "label": "Supplier Incident Rate",
+                    "monthly_data": [
+                        [
+                            "2022-10",
+                            10,
+                            0
+                        ],
+                        [
+                            "2022-11",
+                            15,
+                            1
+                        ],
+                        [
+                            "2022-12",
+                            5,
+                            2
+                        ]
+                    ],
+                    "monthly_data_fields": [
+                        {
+                            "label": "time",
+                            "uom": null
+                        },
+                        {
+                            "label": "SIR",
+                            "uom": "%"
+                        },
+                        {
+                            "label": "No. of complaints",
+                            "uom": ""
+                        }
+                    ],
+                    "yearly_data": [
+                        [
+                            "2020",
+                            50,
+                            0
+                        ],
+                        [
+                            "2021",
+                            10,
+                            1
+                        ],
+                        [
+                            "2022",
+                            20,
+                            2
+                        ]
+                    ],
+                    "yearly_data_fields": [
+                        {
+                            "label": "time",
+                            "uom": null
+                        },
+                        {
+                            "label": "SIR",
+                            "uom": "%"
+                        },
+                        {
+                            "label": "No. of complaints",
+                            "uom": ""
+                        }
+                    ]
+                },
+                {
+                    "label": "Supplier Failure Rate",
+                    "monthly_data": [
+                        [
+                            "2022-10",
+                            65000,
+                            0
+                        ],
+                        [
+                            "2022-11",
+                            61000,
+                            1
+                        ],
+                        [
+                            "2022-12",
+                            65100,
+                            2
+                        ]
+                    ],
+                    "monthly_data_fields": [
+                        {
+                            "label": "time",
+                            "uom": null
+                        },
+                        {
+                            "label": "SFR",
+                            "uom": "ppm"
+                        },
+                        {
+                            "label": "Claimed quantity",
+                            "uom": "pc"
+                        }
+                    ],
+                    "yearly_data": [
+                        [
+                            "2020",
+                            10,
+                            0
+                        ],
+                        [
+                            "2021",
+                            2,
+                            1
+                        ],
+                        [
+                            "2022",
+                            60,
+                            2
+                        ]
+                    ],
+                    "yearly_data_fields": [
+                        {
+                            "label": "time",
+                            "uom": null
+                        },
+                        {
+                            "label": "SIR",
+                            "uom": "%"
+                        },
+                        {
+                            "label": "No. of complaints",
+                            "uom": ""
+                        }
+                    ]
+                },
+                {
+                    "label": "Supplier caused Non Conformance Costs (Gross)",
+                    "monthly_data": [
+                        [
+                            "2022-10",
+                            65000
+                        ],
+                        [
+                            "2022-11",
+                            61000
+                        ],
+                        [
+                            "2022-12",
+                            65100
+                        ]
+                    ],
+                    "monthly_data_fields": [
+                        {
+                            "label": "time",
+                            "uom": null
+                        },
+                        {
+                            "label": " ScNCC Gross",
+                            "uom": "EUR"
+                        }
+                    ],
+                    "yearly_data": [
+                        [
+                            "2020",
+                            65000
+                        ],
+                        [
+                            "2021",
+                            61000
+                        ],
+                        [
+                            "2022",
+                            65100
+                        ]
+                    ],
+                    "yearly_data_fields": [
+                        {
+                            "label": "time",
+                            "uom": null
+                        },
+                        {
+                            "label": " ScNCC Gross",
+                            "uom": "EUR"
+                        }
+                    ]
+                }
+            ],
+            "tabular_data_sets": []
+        }
+    ]
+}

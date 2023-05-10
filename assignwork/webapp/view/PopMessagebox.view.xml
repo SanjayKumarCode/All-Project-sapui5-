@@ -1,0 +1,134 @@
+<mvc:View
+	controllerName="com.example.assignwork.controller.PopMessagebox"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m"
+	
+	xmlns:core="sap.ui.core"
+	>
+	<Panel height="60px">
+<core:Fragment
+				fragmentName="com.example.assignwork.view.fragment.btn"
+				type="XML"/>
+				</Panel>
+
+	<Table id="idProductsTable"
+		mode="MultiSelect"
+		inset="false"
+		items="{
+			path: '/ProductCollection',
+			sorter: {
+				path: 'Name'
+			}
+		}">
+
+		<headerToolbar>
+			<!-- <OverflowToolbar>
+				<Title text="Products" level="H2"/>
+			</OverflowToolbar> -->
+			
+		</headerToolbar>
+
+		<columns>
+			<Column>
+				<Text text="Operation "/>
+			</Column>
+
+			<Column
+				
+				demandPopin="true">
+				<Text text="Default Work Center" />
+			</Column>
+
+
+			<Column
+				demandPopin="true">
+				<Text text="Assignments" />
+			</Column>
+
+			<Column 
+				demandPopin="true">
+				<Text text="Operation" />
+			</Column>
+
+			
+
+
+		</columns>
+		<items>
+			<ColumnListItem vAlign="Middle" type="Navigation">
+				<cells>
+					<ObjectIdentifier
+						title="{Quantity}"
+						text="{ProductId}" 
+
+                        />
+
+					<ObjectNumber
+						text="{ProductId}" 
+						unit="{Category}"
+						 />
+						 <ObjectNumber
+					text="{MainCategory}" 
+						unit="{MainCategory}"
+						 />
+
+						 <ObjectNumber
+							
+						unit="{opration} {oprationP}"
+						 />
+
+						 <ObjectNumber
+							
+						unit="{Order}"
+						 />
+
+
+						 
+						 
+<ObjectIdentifier
+						title="{WorkCenter}"
+						text="{Machine}" 
+                        />
+
+						<ObjectIdentifier
+						title="{Material}"
+						text="{MaterialWork}" 
+                        />
+						<ObjectIdentifier
+						title="{Plant}"
+						text="{work}" 
+                        />
+
+
+						
+
+					
+						 <ObjectNumber
+							
+						unit="{AssignedTO}"
+						 />
+
+                    <ObjectIdentifier
+						title="{Scheduled_start}"
+						text="{Time}" 
+                        />
+						 
+						
+
+						 
+						 
+						  
+
+
+					<!-- <ObjectNumber
+                        number="{
+                            parts:[{path:'Price'},{path:'CurrencyCode'}],
+                            type: 'sap.ui.model.type.Currency',
+                            formatOptions: {showMeasure: false}
+                        }"
+                        unit="{CurrencyCode}" /> -->
+				</cells>
+			</ColumnListItem>
+		</items>
+	</Table>
+</mvc:View>

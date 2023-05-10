@@ -1,0 +1,39 @@
+<core:FragmentDefinition
+	xmlns="sap.m"
+	xmlns:l="sap.ui.layout"
+	xmlns:f="sap.ui.layout.form"
+	xmlns:core="sap.ui.core">
+	
+					<Title level="H3" text="Year-To-Date KPIs" class="sapUiTinyMarginTop" />
+	<VBox class="sapUiSmallMargin">
+		<f:SimpleForm id="SimpleFormDisplayColumn_threeGroups236"
+			editable="false"
+			layout="ColumnLayout"
+			columnsM="2"
+			columnsL="3"
+			columnsXL="6"
+			>
+			<f:content>
+				<core:Title text="Procurement" />
+				<Text text="POV 503 940 EUR" />
+			
+				<core:Title text="Quality" />
+				<Label text="" />
+				<Text text="SIR 0.22 %" />
+				<Label text="" />
+				<Text text="SFR 350 ppm" />
+				<Label text="" />
+				<Text text="ScNCC Gross 0 EUR" />
+				<core:Title text="Logistics" />
+				<Label text="" />
+				<Text text="SDR 64.4 %" />
+				<Label text="" />
+				<Text text="SDc 99.32 %" />
+				<Label text="" />
+				<Text text="ASRD 64.71 %" />
+				
+			</f:content>
+		</f:SimpleForm>
+	</VBox>
+		
+</core:FragmentDefinition>

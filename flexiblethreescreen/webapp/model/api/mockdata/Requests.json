@@ -1,0 +1,96 @@
+[
+    {
+
+      "Field_Service":"Field Service",
+
+        "NOTIFICATION_ID": "Field Service",
+        "SYSTEM_ID": "SYS1",
+        "DESCRIPTION": "Test description 1",
+        "REPORTED_ON": "2021-01-01T18:25:43.511Z",
+        "MATERIAL": "Steel",
+        "REFERENCE": "00001",
+        "STATUS_ID": "O",
+        "STATUS_TEXT": "Open",
+        "IS_CLOSED": false,
+        "NOTIFICATION_TYPE": "Qualification 1",
+        "PROBLEM_CODE": "Problem code 1",
+      
+        "TASKS": [
+            {
+                "TASK_ID": "0001",
+                "TASK_CODE_TEXT": "Task code text",
+                "TASK_TEXT": "Task text",
+                "STATUS_ID": "REL",
+                "STATUS_TEXT": "Released",
+                "RESPONSIBLE_ID": "Z1234",
+                "RESPONSIBLE_TEXT": "User Name"
+            },
+            {
+                "TASK_ID": "0002",
+                "TASK_CODE_TEXT": "Task code text",
+                "TASK_TEXT": "Task text",
+                "STATUS_ID": "REL",
+                "STATUS_TEXT": "Released",
+                "RESPONSIBLE_ID": "1234",
+                "RESPONSIBLE_TEXT": "User Name"
+            },
+            {
+                "TASK_ID": "0003",
+                "TASK_CODE_TEXT": "Task code text",
+                "TASK_TEXT": "Task text",
+                "STATUS_ID": "PRO",
+                "STATUS_TEXT": "In Progress",
+                "RESPONSIBLE_ID": "USR2",
+                "RESPONSIBLE_TEXT": "User Name 2"
+            }
+        ],
+       
+        "MATERIALS": [
+            {
+                "SORT": 1,
+                "OBJECT_CATEGORY": "Material",
+                "OBJECT_TEXT": "Object text 1",
+                "MATERIAL": "74264498",
+                "REMARK": "Approved Qty: 5"
+            },
+            {
+                "SORT": 2,
+                "OBJECT_CATEGORY": "Material",
+                "OBJECT_TEXT": "Object text 2",
+                "MATERIAL": "MK33672",
+                "REMARK": "Approved Qty: 5"
+            },
+            {
+                "SORT": 3,
+                "OBJECT_CATEGORY": "Material",
+                "OBJECT_TEXT": "Object text 3",
+                "MATERIAL": "PP900",
+                "REMARK": "Approved Qty: 5"
+            }
+        ]
+        
+    },
+    {
+
+        "Field_Service":"Mechanical Parts",
+ 
+
+        "NOTIFICATION_ID": "Machined Parts",
+        "SYSTEM_ID": "SYS2",
+        "DESCRIPTION": "Test description 2",
+        "REPORTED_ON": "2022-01-01T18:25:43.511Z",
+        "MATERIAL": "Steel",
+        "REFERENCE": "00002",
+        "STATUS_ID": "O",
+        "STATUS_TEXT": "Open",
+        "IS_CLOSED": false,
+        "NOTIFICATION_TYPE": "Qualification 2",
+        "PROBLEM_CODE": "Problem code 2",
+        "LONG_TEXT": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam est quam, aliquet ac mi et, feugiat gravida nunc. Donec vel erat sit amet justo viverra vehicula. Ut est nisl, pharetra nec urna eu, pharetra hendrerit velit. Integer ut arcu id erat elementum condimentum. Aliquam sagittis sem ut tellus molestie pellentesque",
+        "TASKS": [],
+        "DOCUMENTS": [],
+        "MATERIALS": [],
+        "ATTACHMENTS": []
+    }
+    
+]

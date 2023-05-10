@@ -1,0 +1,203 @@
+<mvc:View controllerName="com.example.assignwork.controller.Main"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m"
+    height="100%"
+	xmlns:m="sap.m"
+  xmlns:t="sap.ui.table"
+	xmlns:core="sap.ui.core"
+	xmlns:layout="sap.ui.layout"
+	xmlns:semantic="sap.f.semantic"    
+    >
+    <semantic:SemanticPage
+		id="mySemanticPage"
+		headerPinnable="true"
+		toggleHeaderOnTitleClick="true"
+		preserveHeaderStateOnScroll="false"
+		titleAreaShrinkRatio="1:1.6:1.6"
+		showFooter="{/showFooter}">
+		
+		<semantic:headerContent
+		>
+			<layout:HorizontalLayout >
+<VBox>
+<Text text="" />
+					
+</VBox>
+
+<VBox>
+<Text text="Order:"   class="sapUiSmallMarginBeginEnd" />
+					<MultiInput
+                      class="sapUiSmallMarginBeginEnd" 
+									
+										showSuggestion="true"
+										suggestionItems="{/}"
+										width="130px">
+								<suggestionItems>
+									<core:ListItem
+									/>
+								</suggestionItems>
+					</MultiInput>
+</VBox>
+
+<VBox>
+<Text text="Operation:"   class="sapUiSmallMarginBeginEnd" />
+					<MultiInput
+                      class="sapUiSmallMarginBeginEnd" 
+										
+										showSuggestion="true"
+										suggestionItems="{/}"
+										width="130px">
+								<suggestionItems>
+									<core:ListItem
+											key="{key}"
+											text="{
+												path : 'text',
+												formatter : '.whitespace2Char'
+											}"
+											additionalText="{
+												path : 'additionalText',
+												formatter : '.whitespace2Char'
+											}"/>
+								</suggestionItems>
+					</MultiInput>
+</VBox>
+
+<VBox>
+<Text text="Material"   class="sapUiSmallMarginBeginEnd" />
+					<MultiInput
+                      class="sapUiSmallMarginBeginEnd" 
+									
+										showSuggestion="true"
+										suggestionItems="{/}"
+										width="130px">
+								<suggestionItems>
+									<core:ListItem
+											key="{key}"
+											text="{
+												path : 'text',
+												formatter : '.whitespace2Char'
+											}"
+											additionalText="{
+												path : 'additionalText',
+												formatter : '.whitespace2Char'
+											}"/>
+								</suggestionItems>
+					</MultiInput>
+</VBox>
+
+<VBox>
+<Text text="Work Center:"   class="sapUiSmallMarginBeginEnd" />
+					<MultiInput
+                      class="sapUiSmallMarginBeginEnd" 
+									
+										showSuggestion="true"
+										suggestionItems="{/}"
+										width="130px">
+								<suggestionItems>
+									<core:ListItem
+											key="{key}"
+											text="{
+												path : 'text',
+												formatter : '.whitespace2Char'
+											}"
+											additionalText="{
+												path : 'additionalText',
+												formatter : '.whitespace2Char'
+											}"/>
+								</suggestionItems>
+					</MultiInput>
+</VBox>
+
+<VBox>
+<Text text="Plant:"   class="sapUiSmallMarginBeginEnd" />
+					<MultiInput
+                      class="sapUiSmallMarginBeginEnd" 
+									
+										showSuggestion="true"
+										suggestionItems="{/}"
+										width="130px">
+								<suggestionItems>
+									<core:ListItem
+											key="{key}"
+											text="{
+												path : 'text',
+												formatter : '.whitespace2Char'
+											}"
+											additionalText="{
+												path : 'additionalText',
+												formatter : '.whitespace2Char'
+											}"/>
+								</suggestionItems>
+					</MultiInput>
+</VBox>
+
+<VBox>
+<Text text="Status:"   class="sapUiSmallMarginBeginEnd" />
+					<MultiInput
+                      class="sapUiSmallMarginBeginEnd" 
+									
+										showSuggestion="true"
+										suggestionItems="{/}"
+										width="130px">
+								<suggestionItems>
+									<core:ListItem
+											key="{key}"
+											text="{
+												path : 'text',
+												formatter : '.whitespace2Char'
+											}"
+											additionalText="{
+												path : 'additionalText',
+												formatter : '.whitespace2Char'
+											}"/>
+								</suggestionItems>
+					</MultiInput>
+</VBox>
+
+<VBox>
+<Text text="Scheduled Start:"   class="sapUiSmallMarginBeginEnd" />
+					<MultiInput
+                      class="sapUiSmallMarginBeginEnd" 
+									
+										showSuggestion="true"
+										suggestionItems="{/}"
+										width="130px">
+								<suggestionItems>
+									<core:ListItem
+											key="{key}"
+											text="{
+												path : 'text',
+												formatter : '.whitespace2Char'
+											}"
+											additionalText="{
+												path : 'additionalText',
+												formatter : '.whitespace2Char'
+											}"/>
+								</suggestionItems>
+					</MultiInput>
+</VBox>
+			</layout:HorizontalLayout>
+		</semantic:headerContent>
+		<semantic:content>
+
+
+
+	
+<!-- <mvc:XMLView viewName="com.example.assignwork.view.PopMessagebox"/>  -->
+	
+<mvc:XMLView viewName="com.example.assignwork.view.Table"/> 
+		</semantic:content>
+
+	<semantic:titleCustomTextActions>
+			<Button text="Adapt Filters" press="adaptFilters"/>
+		</semantic:titleCustomTextActions>
+
+		<semantic:titleMainAction>
+			<semantic:TitleMainAction text="GO" 	press="onDialogPress"/>
+		</semantic:titleMainAction>
+
+	</semantic:SemanticPage>
+
+
+
+</mvc:View>

@@ -1,0 +1,94 @@
+<mvc:View controllerName="com.example.testapplication.controller.Main"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m"
+	xmlns:l="sap.ui.layout"
+	xmlns:core="sap.ui.core"
+	>
+   
+	
+ <Page title="Title">
+<content>
+<Table id="tableId" inset="false" mode="MultiSelect"
+items="{
+path: '/ProductCollection',
+sorter: {
+path: 'Name'
+}
+}">
+
+<headerToolbar>
+<Toolbar>
+<Title text="Products"></Title>
+<ToolbarSpacer>
+</ToolbarSpacer>
+<Button text="Add Row"  press="onAddRow"
+icon="sap-icon://add">
+</Button>
+
+<Button text="Delete Row"  press="onDeleteRow"
+icon="sap-icon://delete"></Button>
+
+<!-- <Button text="F4 Help"  	press=".onDefaultDialogPress"
+icon="sap-icon://value-help"></Button> -->
+
+	<Button
+			text="F4 Help"
+			press=".onSelectDialogPress"
+		icon="sap-icon://value-help"
+			ariaHasPopup="Dialog" />
+
+
+<Button text="Copy"  press="on"
+icon="sap-icon://copy"></Button>
+
+<Button	icon="sap-icon://download" text="Export to Excel" press="onDataExport" />
+
+</Toolbar>
+</headerToolbar>
+<columns>
+<Column width="18%">
+<Text text="ID" />
+</Column>
+<Column minScreenWidth="Tablet" demandPopin="true">
+<Text text="Name" />
+</Column>
+<Column minScreenWidth="Tablet" demandPopin="true" hAlign="Right">
+<Text text="Population" />
+</Column>
+<Column minScreenWidth="Tablet" demandPopin="true" hAlign="Center">
+<Text text="Countries" />
+</Column>
+<Column hAlign="Right">
+<Text text="Price" />
+</Column>
+</columns>
+	<items >
+			<ColumnListItem vAlign="Middle">
+				<cells>
+					
+                        <Text
+						
+						text="{Country_Id}" />
+
+					<Text
+						text="{Name1}" />
+					<Text
+						text="{Population}" />
+
+                   
+
+                        <Text
+						text="{Country}" />
+
+                            <Text
+						text="{Price}" />
+					
+				</cells>
+			</ColumnListItem>
+		</items>
+</Table>
+</content>
+</Page>
+
+
+</mvc:View>

@@ -1,0 +1,85 @@
+<mvc:View 
+controllerName="com.example.flexibleproject.controller.Detail"
+height="100%"
+xmlns:mvc="sap.ui.core.mvc" 
+xmlns:core="sap.ui.core"
+xmlns:f="sap.ui.layout.form"
+xmlns="sap.m"
+xmlns:l="sap.ui.layout">
+
+<Page
+		id="detailPage"
+		class= "sapUiResponsivePadding--header" >
+		<content>
+			<ObjectHeader
+				title="{app>NOTIFICATION_ID}"
+				backgroundDesign="Solid"
+				text="{app>SYSTEM_ID}"
+				 >
+				<attributes>
+					<ObjectAttribute  text="System ID:{app>SYSTEM_ID}" />
+					<ObjectAttribute  text="Reported On:{app>REPORTED_ON}" />
+					<ObjectAttribute  text="Material:{app>MATERIAL}" />
+					<ObjectAttribute  text="Reference:{app>REFERENCE}" />
+				</attributes>
+				<statuses>
+					<ObjectStatus text="Open"  state="Success" />
+				</statuses>
+			</ObjectHeader>
+
+			 <IconTabBar
+		id="idIconTabBarMulti"
+		expanded="{device>/isNoPhone}"
+		class="sapUiResponsiveContentPadding">
+
+		
+		<items>
+			<IconTabFilter icon="sap-icon://hint" key="General" text="General">
+				<content>
+				<core:Fragment
+				fragmentName="com.example.flexibleproject.view.fragment.DetailGeneral"
+				type="XML"/>
+				</content>
+			</IconTabFilter>
+            <IconTabFilter icon="sap-icon://document" key="Documents" count="2" text="Documents" >
+				<content>
+				<core:Fragment
+				fragmentName="com.example.flexibleproject.view.fragment.DetailDocuments"
+				type="XML"/>
+				</content>
+			</IconTabFilter>
+			<IconTabFilter
+				icon="sap-icon://product"
+				key="Materials" count="3" text="Materials">
+				<content>
+				<core:Fragment
+				fragmentName="com.example.flexibleproject.view.fragment.DetailMaterial"
+				type="XML"/>
+				</content>
+			</IconTabFilter>
+			<IconTabFilter
+				icon="sap-icon://notes"
+				key="Task" 
+				count="3"
+				text="Task">
+				<content>
+				<core:Fragment
+				fragmentName="com.example.flexibleproject.view.fragment.DetailTask"
+				type="XML"/>
+				</content>
+			</IconTabFilter>
+			<IconTabFilter icon="sap-icon://attachment" key="Attachments" count="" text="Attachments">
+				<content>
+				<core:Fragment
+				fragmentName="com.example.flexibleproject.view.fragment.DetailAttachment"
+				type="XML"/>
+				</content>
+			</IconTabFilter>
+		</items>
+	</IconTabBar> 
+
+
+	
+	</content>
+	</Page>
+</mvc:View>

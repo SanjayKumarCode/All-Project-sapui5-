@@ -1,0 +1,76 @@
+<mvc:View controllerName="com.snflk.proc.snflkprocsupplierapprovalwf.controller.Main"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+  xmlns="sap.m" xmlns:tnt="sap.tnt" xmlns:f="sap.f"
+xmlns:custom="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1">
+    <f:DynamicPage id="MainPage"  toggleHeaderOnTitleClick="false" showFooter="true">
+        <!-- DynamicPage Content -->
+		<f:content>
+			<Table
+				id="requestsTable"
+				mode="MultiSelect"
+				itemPress="onListItemPress"
+				inset="false"
+				items="{path: 'app>/REQUEST_LIST'}"
+				class="sapFDynamicPageAlignContent"
+				width="auto">
+                <headerToolbar>
+                        <OverflowToolbar>
+                        <SearchField search="onMainListSearch"
+                            liveChange="onMainListSearch"
+                                width="auto"
+                                id="_IDMainSearchField">                               
+                            </SearchField>
+                        <ToolbarSpacer/>
+                        <Button press="onRefresh"
+                            icon="sap-icon://synchronize"
+                            type="Transparent"/>
+						<Button icon="sap-icon://action-settings" press="onPersoButtonPressed" />
+                        </OverflowToolbar>
+                </headerToolbar>
+				<columns>
+					<Column id="_IDGenColumn1" width="12em">
+						<Text text="{i18n>main.requestID}" />						
+					</Column>	
+					<Column width="12em">
+						<Text text="{i18n>main.supplierid}" />
+					</Column>
+					<Column width="12em">
+						<Text text="{i18n>main.suppliername}" />
+					</Column>
+					<Column width="12em">
+						<Text text="{i18n>main.location}" />
+					</Column>
+					<Column width="12em">
+						<Text text="{i18n>main.noofitemchanged}" />
+					</Column>
+					<Column width="12em">
+						<Text text="{i18n>main.commodity}" />
+					</Column>
+					<Column width="12em">
+						<Text text="{i18n>main.capability}" />
+					</Column>					
+				</columns>
+				<items>
+					<ColumnListItem id="_IDGenColumnListItem1" type="Navigation">
+						<cells>
+							<Text text="{app>RequestID}" />
+							<Text text="{app>IFA}" />
+							<Text text="{app>SupplierName}" />
+							<Text text="{app>LOCATION}" />
+							<Text text="{app>UnitPrice}" />
+							<Text text="{app>Commodity}" />
+							<Text text="{app>Capability}" />
+						</cells>
+					</ColumnListItem>
+				</items>
+			</Table>
+		</f:content>   
+		<f:footer>
+			<OverflowToolbar>
+				<ToolbarSpacer/>
+				<Button type="Accept" text="Accept" press="onRequestApprove"/>
+				<Button type="Reject" text="Reject" press="onRequestReject"/>
+			</OverflowToolbar>
+		</f:footer>
+    </f:DynamicPage>
+</mvc:View>

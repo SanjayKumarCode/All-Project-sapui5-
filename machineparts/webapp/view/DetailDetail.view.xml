@@ -1,0 +1,32 @@
+<mvc:View 
+controllerName="com.example.machineparts.controller.DetailDetail"
+height="100%"
+xmlns:mvc="sap.ui.core.mvc" 
+xmlns:core="sap.ui.core"
+xmlns:f="sap.ui.layout.form"
+xmlns="sap.m"
+xmlns:l="sap.ui.layout">
+
+<Page
+		id="detailPage"
+		class= "sapUiResponsivePadding--header" >
+		<content>
+			<ObjectHeader
+				title="{app>TYPE_OF_PROCESS}"
+				backgroundDesign="Solid"
+				text="{app>TASK_CODE_TEXT}"
+				 >
+				<!-- <attributes>
+					<ObjectAttribute  text="System ID:{app>SYSTEM_ID}" />
+					<ObjectAttribute  text="Reported On:{app>REPORTED_ON}" />
+					<ObjectAttribute  text="Material:{app>MATERIAL}" />
+					<ObjectAttribute  text="Reference:{app>REFERENCE}" />
+				</attributes> -->
+				
+			</ObjectHeader>
+
+			
+	
+	</content>
+	</Page>
+</mvc:View>

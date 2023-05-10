@@ -1,0 +1,44 @@
+<core:FragmentDefinition
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:core="sap.ui.core"
+	xmlns="sap.suite.ui.microchart"
+	xmlns:m="sap.m"
+	xmlns:layout="sap.ui.layout"
+	xmlns:l="sap.ui.layout"
+	xmlns:f="sap.ui.layout.form"
+		xmlns:form="sap.ui.layout.form"
+	>
+	
+	<layout:Grid defaultSpan="XL6 L6 M6 S12">
+
+		
+		<m:Text>
+			
+			<m:layoutData>
+				<layout:GridData span="XL12 L12 M12 S12"/>
+			</m:layoutData>
+		</m:Text>
+		<m:FlexBox width="30rem" height="20rem" alignItems="Center" class="sapUiSmallMargin">
+			<m:items>
+				<InteractiveBarChart labelWidth="25%" selectionChanged="selectionChanged" press="press">
+					<bars>
+						<InteractiveBarChartBar label="2020" value="18000"/>
+						<InteractiveBarChartBar label="2021" value="350000"/>
+						<InteractiveBarChartBar label="2022" value="250000"/>
+					</bars>
+				</InteractiveBarChart>
+			</m:items>
+		</m:FlexBox>
+		<m:FlexBox width="30rem" height="20rem" alignItems="Center" class="sapUiSmallMargin">
+			<m:items>
+				<InteractiveBarChart labelWidth="25%" selectionChanged="selectionChanged" press="press">
+					<bars>
+						<InteractiveBarChartBar label="2022-10" value="62,000" displayedValue="62,000"/>
+						<InteractiveBarChartBar label="2022-11" value="20" displayedValue="60,000"/>
+						<InteractiveBarChartBar label="2022-12" value="70" displayedValue="61,000"/>
+					</bars>
+				</InteractiveBarChart>
+			</m:items>
+		</m:FlexBox>
+	</layout:Grid>
+</core:FragmentDefinition>

@@ -1,0 +1,95 @@
+[
+    {
+        "RequestID":1,
+        "EAFIELDS":[
+            {
+                "TEXT":"Quality Management ISO 9001/9100",
+                "VALUE":"FALSE",
+                "DATATYPE":"Boolean"
+            },
+            {
+                "TEXT":"Automotive Certificate ISO/TS 16949",
+                "VALUE":"FALSE",
+                "DATATYPE":"Boolean"
+            },
+            {
+                "TEXT":"Environmental Management ISO 14001",
+                "VALUE":"s10",
+                "DATATYPE":"varchar"
+            },
+            {
+                "TEXT":"Occupational Safety OHSAS 18001",
+                "VALUE":"7",
+                "DATATYPE":"Integer"
+            },
+            {
+                "TEXT":"AD2000 Certificate",
+                "VALUE":"9",
+                "DATATYPE":"Integer"
+            },
+            {
+                "TEXT":"EN 10204 Raw Material Stamping",
+                "VALUE":"8",
+                "DATATYPE":"Integer"
+            },
+            {
+                "TEXT":"ESA",
+                "VALUE":"10",
+                "DATATYPE":"Integer"
+            },
+            {
+                "TEXT":"Special Certificates (specify)",
+                "VALUE":"10",
+                "DATATYPE":"Integer"
+            }
+        ]
+    },
+    {
+        "RequestID": 2,
+        "EAFIELDS":[
+            {                
+                "TEXT":"Standard Cleaning",
+                "VALUE":"TRUE",
+                "DATATYPE":"Boolean"
+            },
+            {
+                "TEXT":"Spray Cleaning",
+                "VALUE":"TRUE",
+                "DATATYPE":"Boolean"
+            },
+            {
+                "TEXT":"Ultrasonic Bath Cleaning",
+                "VALUE":"TRUE",
+                "DATATYPE":"Boolean"
+            }            
+        ]
+    },{
+        "RequestID":3,
+        "EAFIELDS":[{
+            "TEXT":"Inner Grinding",
+            "VALUE":"TRUE",
+            "DATATYPE":"Boolean"
+        },
+        {
+            "TEXT":"Outer Grinding",
+            "VALUE":"TRUE",
+            "DATATYPE":"Boolean"
+        }, 
+        {
+            "TEXT":"Number of NC/CNC Machines",
+            "VALUE":"FALSE",
+            "DATATYPE":"Boolean"
+        },
+        {
+            "TEXT":"Diameter [mm] [min]",
+            "VALUE":"90",
+            "DATATYPE":"Integer"
+        },
+        {
+            "TEXT":"Diameter [mm] [max]",
+            "VALUE":"100",
+            "DATATYPE":"Integer"
+        } ]
+    }
+    
+]

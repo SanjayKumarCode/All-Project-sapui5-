@@ -1,0 +1,84 @@
+<mvc:View 
+height="100%"
+xmlns:mvc="sap.ui.core.mvc" 
+xmlns:core="sap.ui.core"
+xmlns:f="sap.ui.layout.form"
+xmlns="sap.m"
+xmlns:l="sap.ui.layout">
+
+<Page
+		id="idPage"
+		class= "sapUiResponsivePadding--header" >
+		<content>
+			<ObjectHeader id="obj"
+				title=""
+				backgroundDesign="Solid" >
+				<attributes>
+					<ObjectAttribute id="obj1"  text="System ID: SYS1" />
+					<ObjectAttribute id="obj2" text="Reported On: 2021-01-01" />
+					<ObjectAttribute id="obj3" text="Material: Steel" />
+					<ObjectAttribute id="obj4" text="Reference: 01" />
+				</attributes>
+
+				<statuses>
+					<ObjectStatus id="objsta" text="Open" state="Success" />
+				</statuses>
+			</ObjectHeader>
+
+	<IconTabBar
+		id="idIconTabBarMulti"
+		expanded="{device>/isNoPhone}"
+		class="sapUiResponsiveContentPadding">
+
+		
+		<items>
+			<IconTabFilter id="gene" icon="sap-icon://hint" key="General" text="General">
+				<content>
+				<core:Fragment
+				fragmentName="com.example.flexible.view.fragment.General"
+				type="XML"/>
+				</content>
+			</IconTabFilter>
+            <IconTabFilter id="Docum" icon="sap-icon://document" key="Documents" count="2" text="Documents" >
+				<content>
+				<core:Fragment
+				fragmentName="com.example.flexible.view.fragment.Document"
+				type="XML"/>
+				</content>
+			</IconTabFilter>
+			<IconTabFilter id="materi"
+				icon="sap-icon://product"
+				key="Materials" count="3" text="Materials">
+				<content>
+				<core:Fragment
+				fragmentName="com.example.flexible.view.fragment.Material"
+				type="XML"/>
+				</content>
+			</IconTabFilter>
+			<IconTabFilter  id="task"
+				icon="sap-icon://notes"
+				key="Task" 
+				count="4"
+				text="Task">
+				<content>
+				<core:Fragment
+				fragmentName="com.example.flexible.view.fragment.Task"
+				type="XML"/>
+				</content>
+			</IconTabFilter>
+
+			<IconTabFilter  id="attachme" icon="sap-icon://attachment" key="Attachments" count="6" text="Attachments">
+				
+                 <content>
+				<core:Fragment
+				fragmentName="com.example.flexible.view.fragment.Attachments"
+				type="XML"/>			
+				</content>
+
+			</IconTabFilter>
+
+		</items>
+	</IconTabBar>
+	</content>
+	</Page>
+</mvc:View>

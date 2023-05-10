@@ -1,0 +1,101 @@
+<mvc:View controllerName="com.example.task.controller.Main"
+xmlns:core="sap.ui.core"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m"
+ displayBlock="true"
+	>
+				<Page>
+					<content>
+		<ScrollContainer
+		height="100%"
+		width="100%" 
+		vertical="true"
+		focusable="true">
+		<HBox class="sapUiLargeMarginTop sapUiMediumMarginLeft">
+		<Label text="IFA:" class="sapUiMediumMarginLeft" />
+			<Select     
+					forceSelection="false"
+                        width="240px"
+						items="{
+							path: '/IFA'
+						}">
+					<core:Item key="{IFA}"   text="{IFA} {SUPPLIER_NAME}" class="sapUiResponsiveContentPadding"/>
+				</Select>
+				</HBox>
+    <IconTabBar
+		id="idIconTabBarInlineMode"
+		headerMode="Inline"
+		expanded="{device>/isNoPhone}"
+		class="sapUiResponsiveContentPadding">
+
+				
+		<items>
+			
+			<IconTabFilter
+				text="Overview"
+				key="Overview">
+				<Panel height="400px">
+<content> 
+				<core:Fragment id="in2"
+				fragmentName="com.example.task.view.fragment.Display"
+				type="XML"/>
+				</content>
+
+
+				<content> 
+				<core:Fragment id="in2"
+				fragmentName="com.example.task.view.fragment.Procurement"
+				type="XML"/>
+				</content>
+
+				<content> 
+				<core:Fragment id="in2"
+				fragmentName="com.example.task.view.fragment.ProcuChart"
+				type="XML"/>
+				</content>
+
+				
+				<content> 
+				<core:Fragment id="in3"
+				fragmentName="com.example.task.view.fragment.Qualityheader"
+				type="XML"/>
+				</content>
+
+				
+				<content> 
+				<core:Fragment id="in31"
+				fragmentName="com.example.task.view.fragment.QualityChart"
+				type="XML"/>
+				</content>
+				
+				</Panel>
+				
+			</IconTabFilter>
+			<IconTabFilter
+				text="Logistics"
+				key="Logistics">
+				<Panel height="400px">
+					<content>
+						<mvc:XMLView viewName="com.example.task.view.Logistics"/>
+					</content>
+				</Panel>
+				
+			</IconTabFilter>
+			<IconTabFilter
+				text="Quality"
+				key="Quality">
+				
+				<Panel height="400px">
+					<content>
+						<mvc:XMLView viewName="com.example.task.view.Quality"/>
+					</content>
+				</Panel>
+	
+			</IconTabFilter>
+			
+		</items>
+	</IconTabBar>
+	</ScrollContainer> </content>
+				</Page>
+		
+</mvc:View>

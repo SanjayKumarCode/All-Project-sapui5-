@@ -1,0 +1,85 @@
+<core:FragmentDefinition
+   xmlns:mvc="sap.ui.core.mvc"
+	xmlns:core="sap.ui.core"
+	xmlns="sap.m" >
+   <Table id="idProductsTable2"
+		inset="false">
+		
+		<columns>
+			<Column
+				width="12em">
+				<Text text="Sort" />
+			</Column>
+			<Column
+				demandPopin="true">
+				<Text text="Object Category" />
+			</Column>
+            <Column
+				demandPopin="true">
+				<Text text="Object Text" />
+			</Column>
+            <Column
+				demandPopin="true">
+				<Text text="Material" />
+			</Column>
+            <Column
+				demandPopin="true">
+				<Text text="Remark" />
+			</Column>
+			
+		</columns>
+		<items>
+			<ColumnListItem vAlign="Middle">
+				<cells>
+					<ObjectIdentifier
+						title="1"
+						text=""/>
+					<Text
+						text="Material" />
+					<Text
+						text="Object text 1" />
+                    <Text
+						text="74264498" />
+                    <Text
+						text="Approved Qty: 5" />        
+					
+				</cells>
+                
+			</ColumnListItem>
+            <ColumnListItem vAlign="Middle">
+				<cells>
+					<ObjectIdentifier
+						title="2"
+						text=""/>
+					<Text
+						text="Material" />
+					<Text
+						text="Object text 2" />
+                    <Text
+						text="MK33672" />
+                    <Text
+						text="Approved Qty: 5" />        
+					
+				</cells>
+                
+			</ColumnListItem>
+            <ColumnListItem vAlign="Middle">
+				<cells>
+					<ObjectIdentifier
+						title="3"
+						text=""/>
+					<Text
+						text="Material" />
+					<Text
+						text="Object text 3" />
+                    <Text
+						text="PP900" />
+                    <Text
+						text="Approved Qty: 5" />        
+					
+				</cells>
+                
+			</ColumnListItem>
+		</items>
+	</Table>
+</core:FragmentDefinition>

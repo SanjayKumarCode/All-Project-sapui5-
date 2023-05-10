@@ -1,0 +1,104 @@
+<mvc:View controllerName="com.example.tableaction.controller.Main"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m"
+   	xmlns:l="sap.ui.layout"
+	xmlns:model="sap.ui.model"
+    xmlns:m="sap.m"
+    	xmlns:core="sap.ui.core"
+	>
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="AddingRow">
+					<content >
+						<Table id="tableId1"  mode="MultiSelect" delete="deleteRow"
+						inset="false"    
+		items="{
+			path: '/CountryCollection',
+			sorter: {
+				path: 'Name'
+			}
+		}"	
+						>
+
+						<!-- <headerToolbar>
+			<OverflowToolbar>
+				<Title text="Products" level="H2"/>
+				<ToolbarSpacer/>
+				<CheckBox text="Fixed Layout" selected="true" select="onCheckBoxSelect"/>
+				<Button text="Open Dialog" press="onOpenPressed"/>
+			</OverflowToolbar>
+		</headerToolbar> -->
+							<headerToolbar>
+								<Toolbar>
+									<ToolbarSpacer></ToolbarSpacer>
+									<Button icon="sap-icon://add" text="Add"  press="onAdd"/>
+                
+
+				 <Button	icon="sap-icon://delete" text="Delete" 
+				 press="onDelete" id="packItem"
+				 /> 
+
+                <Button	icon="sap-icon://copy" text="Copy Row" press="onCopyColumn" /> 
+
+					<Button	text="F4 Help" press="onOpenPressed" ariaHasPopup="Dialog" />
+
+
+<Button	icon="sap-icon://download" text="Export to Excel" press="onDataExport" />
+								</Toolbar>
+							</headerToolbar>
+							<columns>
+			<Column
+				id="productColl"
+				width="12em">
+				<Text text="ID" />
+			</Column>
+			<Column
+				id="supplierCol"
+				minScreenWidth="Tablet"
+				demandPopin="true">
+				<Text text="Name" />
+			</Column>
+			<Column
+				id="dimensionsCol"
+				minScreenWidth="Tablet"
+				demandPopin="true"
+				hAlign="End">
+				<Text text="Population" />
+			</Column>
+			<Column
+				id="priceCol"
+				hAlign="End">
+				<Text text="Countries" />
+			</Column>
+		</columns>
+
+			<items >
+			<ColumnListItem vAlign="Middle">
+				<cells>
+					
+                        <Text
+						
+						text="{Country_Id}" />
+
+					<Text
+						text="{Name1}" />
+					<Text
+						text="{Population}" />
+
+                   
+
+                        <Text
+						text="{Country}" />
+					
+				</cells>
+			</ColumnListItem>
+		</items>
+						</Table>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+    
+</mvc:View>

@@ -1,0 +1,90 @@
+[{
+	"RequestID": 1,
+	"IFA":"0603117322",
+	"SupplierName":"Global Remote Bahrain WLL",
+	"LOCATION":"Ras Zuwayed",
+	"Commodity": "Field Service",
+	"Capability" :"Certificates",
+	"UnitsInStock": 39,
+	"UnitsOnOrder": 10,
+	"UnitPrice": 8,
+	"SupplierID": 1,
+	"Discontinued": false,
+	"Supplier": {
+	  "__deferred": {
+		"uri": "/destinations/northwind/V2/Northwind/Northwind.svc/Products(1)/Supplier"
+	  }
+	}
+  },
+  {
+	"RequestID": 2,
+	"IFA":"0603117322",
+	"SupplierName":"Global Remote Bahrain WLL",
+	"LOCATION":"Ras Zuwayed",
+	"Commodity": "Machine Learning",
+	"Capability" :"Cleaning",
+	"UnitsInStock": 81,
+	"UnitsOnOrder": 7,
+	"UnitPrice": 6,
+	"SupplierID": 1,
+	"Discontinued": true,
+	"Supplier": {
+	  "__deferred": {
+		"uri": "/destinations/northwind/V2/Northwind/Northwind.svc/Products(2)/Supplier"
+	  }
+	}
+  },
+  {
+	"RequestID": 3,
+	"IFA":"0603117322",
+	"SupplierName":"Global Remote Bahrain WLL",
+	"LOCATION":"Ras Zuwayed",
+	"Commodity": "Machine Parts",
+	"Capability" :"Grinding",
+	"UnitsInStock": 100,
+	"UnitsOnOrder": 6,
+	"UnitPrice": 3,
+	"SupplierID": 3,
+	"Discontinued": false,
+	"Supplier": {
+	  "__deferred": {
+		"uri": "/destinations/northwind/V2/Northwind/Northwind.svc/Products(3)/Supplier"
+	  }
+	}
+  },
+  {
+	"RequestID": 4,
+	"IFA":"0603117322",
+	"SupplierName":"Global Remote Bahrain WLL",
+	"LOCATION":"Ras Zuwayed",
+	"Commodity": "Field Service",
+	"Capability" :"Heat Treatment",
+	"UnitsInStock": 2,
+	"UnitsOnOrder": 3,
+	"UnitPrice": 9,
+	"SupplierID": 3,
+	"Discontinued": false,
+	"Supplier": {
+	  "__deferred": {
+		"uri": "/destinations/northwind/V2/Northwind/Northwind.svc/Products(4)/Supplier"
+	  }
+	}
+  },
+  {
+	"RequestID": 5,
+	"IFA":"0603117322",
+	"SupplierName":"Global Remote Bahrain WLL",
+	"LOCATION":"Ras Zuwayed",
+	"Commodity": "Field Service",
+	"Capability" :"Turning",
+	"UnitsInStock": 11,
+	"UnitsOnOrder": 9,
+	"UnitPrice": 8,
+	"SupplierID": 3,
+	"Discontinued": false,
+	"Supplier": {
+	  "__deferred": {
+		"uri": "/destinations/northwind/V2/Northwind/Northwind.svc/Products(5)/Supplier"
+	  }
+	}
+  }]

@@ -1,0 +1,167 @@
+<mvc:View
+	controllerName="com.example.assignwork.controller.Table"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m"
+
+	xmlns:core="sap.ui.core"
+	
+	>
+	<Panel height="60px">
+<core:Fragment
+				fragmentName="com.example.assignwork.view.fragment.btn"
+				type="XML"/>
+				</Panel>
+	<Table id="idProductsTable"
+		mode="MultiSelect"
+		inset="false"
+		items="{
+			path: '/ProductCollection',
+			sorter: {
+				path: 'Name'
+			}
+		}">
+
+		<headerToolbar>
+			<OverflowToolbar>
+				
+				<SearchField id="_IDGenSearchField1" width="1180px" search="handleSearch"
+			
+				/>	
+				
+				
+			</OverflowToolbar>
+		</headerToolbar>
+
+		<columns>
+			<Column>
+				<Text text="Operation Activity"/>
+			</Column>
+
+			<Column
+				width="5em"
+				demandPopin="true">
+				<Text text="Type" />
+			</Column>
+
+
+			<Column
+				demandPopin="true">
+				<Text text="Status" />
+			</Column>
+
+			<Column 
+				demandPopin="true">
+				<Text text="Operation" />
+			</Column>
+
+			<Column
+				demandPopin="true">
+				<Text text="Order" />
+			</Column>
+
+			<Column
+				demandPopin="true">
+				<Text text="Work Center" />
+			</Column>
+
+			<Column
+			width="12em"
+				demandPopin="true">
+				<Text text="Material" />
+			</Column>
+
+			<Column
+				demandPopin="true">
+				<Text text="Plant" />
+			</Column>
+
+			<Column
+				demandPopin="true">
+				<Text text="Assigned To" />
+			</Column>
+
+			<Column
+				demandPopin="true">
+				<Text text="Scheduled Start" />
+			</Column>
+			
+
+
+		</columns>
+		<items>
+			<ColumnListItem vAlign="Middle" type="Navigation">
+				<cells>
+					<ObjectIdentifier
+						title="{Quantity}"
+						text="{ProductId}" 
+
+                        />
+                        	
+
+
+					<ObjectNumber
+						text="{ProductId}" 
+						unit="{Category}"
+						 />
+						 <ObjectNumber
+					text="{MainCategory}" 
+						unit="{MainCategory}"
+						 />
+
+						 <ObjectNumber
+							
+						unit="{opration} {oprationP}"
+						 />
+
+						 <ObjectNumber
+							
+						unit="{Order}"
+						 />					 
+<ObjectIdentifier
+						title="{WorkCenter}"
+						text="{Machine}" 
+                        />
+
+						<ObjectIdentifier
+						title="{Material}"
+						text="{MaterialWork}" 
+                        />
+						<ObjectIdentifier
+						title="{Plant}"
+						text="{work}" 
+                        />
+						 <ObjectNumber
+							
+						unit="{AssignedTO}"
+						 />
+
+                    <ObjectIdentifier
+						title="{Scheduled_start}"
+						text="{Time}" 
+                        />
+
+				</cells>
+			</ColumnListItem>
+		</items>
+	</Table>
+
+
+
+
+	<!-- <List
+					items="{path: 'app>/REQUEST_LIST'}"
+					headerText="Notifications"
+					selectionChange="onSelectionChange">
+					
+					<ObjectListItem
+						title="{app>NOTIFICATION_ID}"
+						type="Navigation"
+						press="onListItemPress"
+						>
+						<ObjectAttribute text="{app>REPORTED_ON}" />
+						<ObjectAttribute text="{app>MATERIAL}" />
+					</ObjectListItem>
+				</List> -->
+	
+	  
+</mvc:View>

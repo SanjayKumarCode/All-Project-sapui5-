@@ -1,0 +1,24 @@
+<core:FragmentDefinition
+	xmlns="sap.m"
+	xmlns:l="sap.ui.layout"
+	xmlns:f="sap.ui.layout.form"
+	xmlns:core="sap.ui.core"
+		xmlns:form="sap.ui.layout.form"	
+  xmlns:mvc="sap.ui.core.mvc"
+  xmlns:html="http://www.w3.org/1999/xhtml"
+	>
+			<Panel >
+					<Title level="H3" text="Quality" class="sapUiTinyMarginTop" /> 
+					  <content>
+		 <Bar>
+		  <contentLeft>
+          <Title level="H3" text="Supplier Incident Rate - Yearly" class="sapUiTinyMarginTop" />
+            </contentLeft>
+            <contentRight>
+       <Title level="H3" text="Supplier Incident Rate - Monthly" class="sapUiTinyMarginTop" />
+            </contentRight>	
+			 </Bar>
+  </content>
+			</Panel>
+		
+</core:FragmentDefinition>

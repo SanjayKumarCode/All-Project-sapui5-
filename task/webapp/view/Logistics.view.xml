@@ -1,0 +1,68 @@
+<mvc:View controllerName="com.example.task.controller.Logistics"
+ xmlns="sap.ui.webc.main" 
+ xmlns:fiori="sap.ui.webc.fiori"
+  xmlns:mvc="sap.ui.core.mvc" 
+  height="100%">
+
+	<fiori:Page>
+		
+		<fiori:content>
+			<Button text="Export" press="onExport" />
+			<Table
+				id="idQualityTable"
+				stickyColumnHeader="true"
+				rowClick="handleRowClick"
+				mode="SingleSelect"
+				selectionChange="handleSelectionChange"
+				rows="{
+					path: '/tabular_logistics',
+					sorter: {
+						path: 'Name'
+					}
+				}">
+				<columns>
+					<TableColumn>
+						<Label text="GID" />
+					</TableColumn>
+					<TableColumn>
+						<Label text="Supplier_Mail" />
+					</TableColumn>
+					<TableColumn>
+						<Label text="IFA" />
+					</TableColumn>
+					<TableColumn>
+						<Label text=" " />
+					</TableColumn>
+					
+				</columns>
+				<rows>
+					<TableRow type="Active">
+						<cells>
+							<TableCell>
+								<content>
+									<Label text="{GID} "/>
+								</content>
+							</TableCell>
+							<TableCell>
+								<content>
+									<Label text="{SUPPLIER_MAIL}" />
+								</content>
+							</TableCell>
+							<TableCell>
+								<content>
+									<Label text="{IFA}" />
+								</content>
+							</TableCell>
+							<TableCell>
+								<content>
+									<Label text="" />
+								</content>
+							</TableCell>
+							
+						</cells>
+					</TableRow>
+				</rows>
+			</Table>
+		</fiori:content>
+	</fiori:Page>
+</mvc:View>

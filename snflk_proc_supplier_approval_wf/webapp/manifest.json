@@ -1,0 +1,132 @@
+{
+  "_version": "1.49.0",
+  "sap.app": {
+    "id": "com.snflk.proc.snflkprocsupplierapprovalwf",
+    "type": "application",
+    "i18n": "i18n/i18n.properties",
+    "applicationVersion": {
+      "version": "0.0.1"
+    },
+    "title": "{{appTitle}}",
+    "description": "{{appDescription}}",
+    "resources": "resources.json",
+    "sourceTemplate": {
+      "id": "@sap/generator-fiori:basic",
+      "version": "1.9.3",
+      "toolsId": "a7c2f39c-1314-428d-95b1-864c23863ffa"
+    }
+  },
+  "sap.ui": {
+    "technology": "UI5",
+    "icons": {
+      "icon": "",
+      "favIcon": "",
+      "phone": "",
+      "phone@2": "",
+      "tablet": "",
+      "tablet@2": ""
+    },
+    "deviceTypes": {
+      "desktop": true,
+      "tablet": true,
+      "phone": true
+    }
+  },
+  "sap.ui5": {
+    "flexEnabled": true,
+    "dependencies": {
+      "minUI5Version": "1.112.1",
+      "libs": {
+        "sap.m": {},
+        "sap.ui.core": {},
+        "sap.f": {},
+        "sap.suite.ui.generic.template": {},
+        "sap.ui.comp": {},
+        "sap.ui.generic.app": {},
+        "sap.ui.table": {},
+        "sap.ushell": {}
+      }
+    },
+    "contentDensities": {
+      "compact": true,
+      "cozy": true
+    },
+    "models": {
+      "i18n": {
+        "type": "sap.ui.model.resource.ResourceModel",
+        "settings": {
+          "bundleName": "com.snflk.proc.snflkprocsupplierapprovalwf.i18n.i18n"
+        }
+      },
+      "app": {
+        "type": "sap.ui.model.json.JSONModel",
+        "uri": "model/local/app.json",
+        "preload": true
+      },
+      "config": {
+        "type": "sap.ui.model.json.JSONModel",
+        "uri": "model/local/config.json",
+        "preload": true
+      }
+    },
+    "resources": {
+      "css": [
+        {
+          "uri": "css/style.css"
+        }
+      ]
+    },
+    "routing": {
+      "config": {
+        "routerClass": "sap.f.routing.Router",
+        "viewType": "XML",
+        "async": true,
+        "viewPath": "com.snflk.proc.snflkprocsupplierapprovalwf.view",
+        "controlId": "idLayout",
+        "bypassed": {
+          "target": "notFound"
+        }
+      },
+      "routes": [
+        {
+          "name": "main",
+          "pattern": ":layout:",
+          "target": ["main"]
+        },
+        {
+          "name": "detail",
+          "pattern":"detail/{requestID}/{layout}",
+          "target": ["main",
+                     "detail"]
+        },
+        {
+          "pattern": "notFound",
+          "name": "notFound",
+          "target": "notFound"
+        }
+      ],
+      "targets": {
+        "main": {
+          "viewName": "Main",
+          "viewId": "Main",
+          "controlAggregation": "beginColumnPages"
+        },
+        "detail": {
+          "viewName": "Detail",
+          "viewId": "Detail",
+          "controlAggregation": "midColumnPages"
+        },
+        "notFound": {
+          "viewName": "NotFound",
+          "viewId": "NotFound"
+        }
+      }
+    },
+    "rootView": {
+      "viewName": "com.snflk.proc.snflkprocsupplierapprovalwf.view.App",
+      "type": "XML",
+      "async": true,
+      "id": "App"
+    }
+  }
+}

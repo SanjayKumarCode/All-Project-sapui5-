@@ -1,0 +1,16 @@
+{
+    "IFA": [
+        {
+            "IFA": "23123213123",
+            "SUPPLIER_NAME": "IFA Name 1"
+        },
+        {
+            "IFA": "2314323213123",
+            "SUPPLIER_NAME": "IFA Name 2"
+        },
+        {
+            "IFA": "21124213123",
+            "SUPPLIER_NAME": "IFA Name 3"
+        }
+    ]
+}

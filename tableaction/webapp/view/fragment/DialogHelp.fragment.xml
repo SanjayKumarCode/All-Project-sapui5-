@@ -1,0 +1,51 @@
+<core:FragmentDefinition
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core"
+
+
+
+	
+    xmlns:l="sap.ui.layout"
+    xmlns:m="sap.m"
+    xmlns:mvc="sap.ui.core.mvc"
+    height="100%"
+
+    xmlns:model="sap.ui.model"
+ 
+    >
+	<Dialog resizable="true"
+		title="Country Name"
+        	
+	 >
+<l:VerticalLayout
+		class="sapUiContentPadding"
+		width="100%"
+    >
+        
+		<ComboBox
+			selectionChange="handleSelectionChange"
+			selectionFinish="handleSelectionFinish"
+			
+
+
+			
+			width="350px"
+			items="{
+				path: '/CountryCollection',
+				sorter: { path: 'Name' }
+			}">
+			<core:Item text="{Country}"/>
+		</ComboBox>
+	</l:VerticalLayout>
+
+
+
+				<beginButton>
+			<Button text="OK" press="onDropdownChange" />
+		</beginButton>
+
+        <endButton>
+			<Button text="Cencel" press="onClosePressed" />
+		</endButton>
+	</Dialog>
+</core:FragmentDefinition>

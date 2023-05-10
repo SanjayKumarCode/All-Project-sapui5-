@@ -1,0 +1,263 @@
+[
+    {
+        "COMMODITY_ID": "01",
+        "COMMODITY_NAME_SERVICES": "Field Service",        
+         "TYPE_OF_PROCESS": [
+            {
+                "MECHANICAL_COMMODITY_TYPE": "Healthcare",
+                "TASK_CODE_TEXT": "Task code text",
+                "TASK_TEXT": "Task text",
+                "STATUS_ID": "REL",
+                "STATUS_TEXT": "Released",
+                "RESPONSIBLE_ID": "Z1234",
+                "RESPONSIBLE_TEXT": "User Name"
+            },
+            {
+                "MECHANICAL_COMMODITY_TYPE": "Telecome",
+                "TASK_CODE_TEXT": "Task code text",
+                "TASK_TEXT": "Task text",
+                "STATUS_ID": "REL",
+                "STATUS_TEXT": "Released",
+                "RESPONSIBLE_ID": "1234",
+                "RESPONSIBLE_TEXT": "User Name"
+            },
+            {
+                "MECHANICAL_COMMODITY_TYPE": "Maintenance",
+                "TASK_CODE_TEXT": "Task code text",
+                "TASK_TEXT": "Task text",
+                "STATUS_ID": "PRO",
+                "STATUS_TEXT": "In Progress",
+                "RESPONSIBLE_ID": "USR2",
+                "RESPONSIBLE_TEXT": "User Name 2"
+            },
+            {
+                "MECHANICAL_COMMODITY_TYPE": "Construction",
+                "TASK_CODE_TEXT": "Task code text",
+                "TASK_TEXT": "Task text",
+                "STATUS_ID": "PRO",
+                "STATUS_TEXT": "In Progress",
+                "RESPONSIBLE_ID": "USR2",
+                "RESPONSIBLE_TEXT": "User Name 2"
+            }
+        ],
+        "DOCUMENTS": [
+            {
+                "DOCUMENTNUMBER": "0-2022-12-HSJD",
+                "DESCRIPTION": "Document description 1",
+                "DOCUMENTTYPE": "DSN",
+                "DOCUMENTPART": "000",
+                "DOCUMENTVERSION": "00"
+            },
+            {
+                "DOCUMENTNUMBER": "0-2021-11-HSD",
+                "DESCRIPTION": "Document description 2",
+                "DOCUMENTTYPE": "DSN",
+                "DOCUMENTPART": "001",
+                "DOCUMENTVERSION": "01"
+            }
+        ],
+        "MATERIALS": [
+            {
+                "SORT": 1,
+                "OBJECT_CATEGORY": "Material",
+                "OBJECT_TEXT": "Object text 1",
+                "MATERIAL": "74264498",
+                "REMARK": "Approved Qty: 5"
+            },
+            {
+                "SORT": 2,
+                "OBJECT_CATEGORY": "Material",
+                "OBJECT_TEXT": "Object text 2",
+                "MATERIAL": "MK33672",
+                "REMARK": "Approved Qty: 5"
+            },
+            {
+                "SORT": 3,
+                "OBJECT_CATEGORY": "Material",
+                "OBJECT_TEXT": "Object text 3",
+                "MATERIAL": "PP900",
+                "REMARK": "Approved Qty: 5"
+            }
+        ],
+        "ATTACHMENTS": [
+            {
+                "ATTACHMENT_ID": "01",
+                "COMMODITY": "SYS1",
+                "FILE_NAME": "image.jpg",
+                "CREATION_DATE": "2012-04-23T18:25:43.511Z",
+                "CREATED_BY_ID": "USR1",
+                "CREATED_BY_TEXT": "User Name"
+
+            },
+            {
+                "ATTACHMENT_ID": "02",
+                "COMMODITY": "SYS1",
+                "FILE_NAME": "document.pdf",
+                "CREATION_DATE": "2021-01-01T18:25:43.511Z",
+                "CREATED_BY_ID": "USR2",
+                "CREATED_BY_TEXT": "User Name 2"
+                
+            }
+        ]
+    },
+    {
+        "COMMODITY_ID": "02",
+        "COMMODITY_NAME_SERVICES": "Machined Parts",
+        "TYPE_OF_PROCESS": [
+                {
+                    "MECHANICAL_COMMODITY_TYPE": "Cutting",
+                    "TASK_CODE_TEXT": "Task code text",
+                    "TASK_TEXT": "Task text",
+                    "STATUS_ID": "REL",
+                    "STATUS_TEXT": "Released",
+                    "RESPONSIBLE_ID": "Z1234",
+                    "RESPONSIBLE_TEXT": "User Name"
+                },
+                {
+                    "MECHANICAL_COMMODITY_TYPE": "EDM",
+                    "TASK_CODE_TEXT": "Task code text",
+                    "TASK_TEXT": "Task text",
+                    "STATUS_ID": "REL",
+                    "STATUS_TEXT": "Released",
+                    "RESPONSIBLE_ID": "Z1234",
+                    "RESPONSIBLE_TEXT": "User Name"
+                },
+                {
+                    "MECHANICAL_COMMODITY_TYPE": "Gearing",
+                    "TASK_CODE_TEXT": "Task code text",
+                    "TASK_TEXT": "Task text",
+                    "STATUS_ID": "REL",
+                    "STATUS_TEXT": "Released",
+                    "RESPONSIBLE_ID": "1234",
+                    "RESPONSIBLE_TEXT": "User Name"
+                },
+                {
+                    "MECHANICAL_COMMODITY_TYPE": "Grinding",
+                    "TASK_CODE_TEXT": "Task code text",
+                    "TASK_TEXT": "Task text",
+                    "STATUS_ID": "PRO",
+                    "STATUS_TEXT": "In Progress",
+                    "RESPONSIBLE_ID": "USR2",
+                    "RESPONSIBLE_TEXT": "User Name 2"
+                },
+                {
+                    "MECHANICAL_COMMODITY_TYPE": "Heat Treatment",
+                    "TASK_CODE_TEXT": "Task code text",
+                    "TASK_TEXT": "Task text",
+                    "STATUS_ID": "PRO",
+                    "STATUS_TEXT": "In Progress",
+                    "RESPONSIBLE_ID": "USR2",
+                    "RESPONSIBLE_TEXT": "User Name 2"
+                },
+                {
+                    "MECHANICAL_COMMODITY_TYPE": "Measuring & Testing",
+                    "TASK_CODE_TEXT": "Task code text",
+                    "TASK_TEXT": "Task text",
+                    "STATUS_ID": "PRO",
+                    "STATUS_TEXT": "In Progress",
+                    "RESPONSIBLE_ID": "USR2",
+                    "RESPONSIBLE_TEXT": "User Name 2"
+                },
+                {
+                    "MECHANICAL_COMMODITY_TYPE": "Milling",
+                    "TASK_CODE_TEXT": "Task code text",
+                    "TASK_TEXT": "Task text",
+                    "STATUS_ID": "PRO",
+                    "STATUS_TEXT": "In Progress",
+                    "RESPONSIBLE_ID": "USR2",
+                    "RESPONSIBLE_TEXT": "User Name 2"
+                },
+                {
+                    "MECHANICAL_COMMODITY_TYPE": "Preffered Lot Size - Per Month",
+                    "TASK_CODE_TEXT": "Task code text",
+                    "TASK_TEXT": "Task text",
+                    "STATUS_ID": "PRO",
+                    "STATUS_TEXT": "In Progress",
+                    "RESPONSIBLE_ID": "USR2",
+                    "RESPONSIBLE_TEXT": "User Name 2"
+                },
+                {
+                    "MECHANICAL_COMMODITY_TYPE": "Process Measurement",
+                    "TASK_CODE_TEXT": "Task code text",
+                    "TASK_TEXT": "Task text",
+                    "STATUS_ID": "PRO",
+                    "STATUS_TEXT": "In Progress",
+                    "RESPONSIBLE_ID": "USR2",
+                    "RESPONSIBLE_TEXT": "User Name 2"
+                },
+                {
+                    "MECHANICAL_COMMODITY_TYPE": "Raw Material Preparation",
+                    "TASK_CODE_TEXT": "Task code text",
+                    "TASK_TEXT": "Task text",
+                    "STATUS_ID": "PRO",
+                    "STATUS_TEXT": "In Progress",
+                    "RESPONSIBLE_ID": "USR2",
+                    "RESPONSIBLE_TEXT": "User Name 2"
+                },
+                {
+                    "MECHANICAL_COMMODITY_TYPE": "Raw Materials - Active Supply Chain For",
+                    "TASK_CODE_TEXT": "Task code text",
+                    "TASK_TEXT": "Task text",
+                    "STATUS_ID": "PRO",
+                    "STATUS_TEXT": "In Progress",
+                    "RESPONSIBLE_ID": "USR2",
+                    "RESPONSIBLE_TEXT": "User Name 2"
+                },
+                {
+                    "MECHANICAL_COMMODITY_TYPE": "Raw Materials - Actively Working With",
+                    "TASK_CODE_TEXT": "Task code text",
+                    "TASK_TEXT": "Task text",
+                    "STATUS_ID": "PRO",
+                    "STATUS_TEXT": "In Progress",
+                    "RESPONSIBLE_ID": "USR2",
+                    "RESPONSIBLE_TEXT": "User Name 2"
+                },
+                {
+                    "MECHANICAL_COMMODITY_TYPE": "Root Cause Analysis",
+                    "TASK_CODE_TEXT": "Task code text",
+                    "TASK_TEXT": "Task text",
+                    "STATUS_ID": "PRO",
+                    "STATUS_TEXT": "In Progress",
+                    "RESPONSIBLE_ID": "USR2",
+                    "RESPONSIBLE_TEXT": "User Name 2"
+                },
+                {
+                    "MECHANICAL_COMMODITY_TYPE": "Surface Treatment",
+                    "TASK_CODE_TEXT": "Task code text",
+                    "TASK_TEXT": "Task text",
+                    "STATUS_ID": "PRO",
+                    "STATUS_TEXT": "In Progress",
+                    "RESPONSIBLE_ID": "USR2",
+                    "RESPONSIBLE_TEXT": "User Name 2"
+                },
+                {
+                    "MECHANICAL_COMMODITY_TYPE": "Turning",
+                    "TASK_CODE_TEXT": "Task code text",
+                    "TASK_TEXT": "Task text",
+                    "STATUS_ID": "PRO",
+                    "STATUS_TEXT": "In Progress",
+                    "RESPONSIBLE_ID": "USR2",
+                    "RESPONSIBLE_TEXT": "User Name 2"
+                },
+                {
+                    "MECHANICAL_COMMODITY_TYPE": "Turning & Milling",
+                    "TASK_CODE_TEXT": "Task code text",
+                    "TASK_TEXT": "Task text",
+                    "STATUS_ID": "PRO",
+                    "STATUS_TEXT": "In Progress",
+                    "RESPONSIBLE_ID": "USR2",
+                    "RESPONSIBLE_TEXT": "User Name 2"
+                },
+                {
+                    "MECHANICAL_COMMODITY_TYPE": "Welding",
+                    "TASK_CODE_TEXT": "Task code text",
+                    "TASK_TEXT": "Task text",
+                    "STATUS_ID": "PRO",
+                    "STATUS_TEXT": "In Progress",
+                    "RESPONSIBLE_ID": "USR2",
+                    "RESPONSIBLE_TEXT": "User Name 2"
+                }
+        ]
+   
+    }
+]

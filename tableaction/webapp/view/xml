@@ -1,0 +1,73 @@
+<!-- sap.ui.define([
+    "sap/ui/core/mvc/Controller"
+],
+    /**
+     * @param {typeof sap.ui.core.mvc.Controller} Controller
+     */
+    function (Controller) {
+        "use strict";
+
+        return Controller.extend("com.example.testapplication.controller.Main", {
+            onInit: function(oEvent) {
+                this._oTable = this.byId("idTable");
+                this.bindTable();
+            },
+            bindTable: function() {
+                var _oData = {
+                    "results": [{
+                        "id": "1",
+                        "name": "Sanjay"
+                    }, {
+                        "id": "2",
+                        "name": "Kumar"
+                    }, {
+                        "id": "3",
+                        "name": "Nischal"
+                    }, {
+                        "id": "4",
+                        "name": "Shubham"
+                    }]
+                };
+                var oModel = new sap.ui.model.json.JSONModel(_oData);
+                this._oTable.setModel(oModel);
+            },
+             onAddRow: function(oEvent){    
+               var newRecord = {
+                    
+                "id": "",
+                "name": ""
+              };
+              var oTableData = this._oTable.getModel().getData();
+              oTableData.results.push(newRecord);
+              this._oTable.getModel().setData(oTableData);
+            },
+            onDeleteSelectedRows: function(oEvent){
+                   
+                var oTableData = this._oTable.getModel().getData();            
+              var aContexts = this._oTable.getSelectedContexts();
+              for (var i=aContexts.length -1; i>=0; i--) {
+                var oThisObj = aContexts[i].getObject();
+                var index = $.map(oTableData.results, function(obj, index) {
+                    if(obj === oThisObj) {
+                        return index;
+                    }
+                })
+                oTableData.results.splice(index, 1);
+              }
+            
+              this._oTable.getModel().setData(oTableData); 
+              this._oTable.removeSelections(true);
+            }
+            
+        });
+        
+        var app = new sap.m.App({});
+        
+        var oView = sap.ui.xmlview({
+            viewContent: jQuery("#view1").html()
+        });
+        
+        app.addPage(oView);
+        app.placeAt("uiArea");
+            
+        }); -->

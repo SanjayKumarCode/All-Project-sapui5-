@@ -1,0 +1,51 @@
+<mvc:View 
+controllerName="com.example.flexibleproject.controller.Detail"
+height="100%"
+xmlns:mvc="sap.ui.core.mvc" 
+xmlns:core="sap.ui.core"
+xmlns:f="sap.ui.layout.form"
+xmlns="sap.m"
+xmlns:l="sap.ui.layout">
+
+<Page
+		id="detailPage"
+		class= "sapUiResponsivePadding--header" >
+		<content>
+		 <ObjectHeader
+				title="{app>NOTIFICATION_ID}"
+				backgroundDesign="Solid"
+				text="{app>SYSTEM_ID}"
+				 >
+				<attributes>
+					<!-- <ObjectAttribute  text="System ID:{app>SYSTEM_ID}" />
+					<ObjectAttribute  text="Reported On:{app>REPORTED_ON}" />
+					<ObjectAttribute  text="Material:{app>MATERIAL}" />
+					<ObjectAttribute  text="Reference:{app>REFERENCE}" /> -->
+
+				</attributes>
+				<!-- <statuses>
+					<ObjectStatus text="Open"  state="Success" />
+				</statuses> -->
+			</ObjectHeader> 
+			<List
+					items="{path: 'app>/EDIT_ASSESSMENT_DETAIL/'}"
+					
+					selectionChange="onSelectionChange">
+					
+					<ObjectListItem
+						title="{app>TASK_ID}"
+						type="Navigation"
+						press="onListItemPress"
+						>
+						<!-- <ObjectAttribute  text="Reference:{app>REFERENCE}" />  -->
+						<!-- <ObjectAttribute text="{app>REPORTED_ON}" />
+						<ObjectAttribute text="{app>MATERIAL}" />  -->
+					</ObjectListItem>
+				</List>
+
+
+
+	
+	</content>
+	</Page>
+</mvc:View>

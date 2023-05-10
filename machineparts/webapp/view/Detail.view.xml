@@ -1,0 +1,28 @@
+<mvc:View
+	controllerName="com.example.machineparts.controller.Detail"
+	xmlns="sap.m"
+	xmlns:f="sap.f"
+	xmlns:mvc="sap.ui.core.mvc">
+	<f:DynamicPage id="detailPage" toggleHeaderOnTitleClick="false">
+		
+		<f:content>
+
+				<VBox>
+				<List
+					items="{path: 'app>TYPE_OF_PROCESS'}"
+					selectionChange="onSelectionChange">
+					
+					<ObjectListItem
+						title="{app>MECHANICAL_COMMODITY_TYPE}"
+						type="Navigation"
+						press="onListItemPress2">
+					</ObjectListItem>
+                    
+				</List>
+				
+			</VBox>
+		</f:content>
+
+		
+	</f:DynamicPage>
+</mvc:View>

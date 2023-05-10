@@ -1,0 +1,68 @@
+<core:FragmentDefinition
+   xmlns:mvc="sap.ui.core.mvc"
+	xmlns:core="sap.ui.core"
+	xmlns="sap.m" >
+   <Table id="idProductsTable"
+		inset="false">
+
+		<columns>
+			<Column
+				width="12em">
+				<Text text="Product" />
+			</Column>
+			<Column
+				demandPopin="true">
+				<Text text="Supplier" />
+			</Column>
+            <Column
+				demandPopin="true">
+				<Text text="DPt" />
+			</Column>
+            <Column
+				demandPopin="true">
+				<Text text="Vs" />
+			</Column>
+            <Column
+				demandPopin="true">
+				<Text text="Description" />
+			</Column>
+			
+		</columns>
+		<items>
+			<ColumnListItem vAlign="Middle">
+				<cells>
+					<ObjectIdentifier
+						title="DSN"
+						text=""/>
+					<Text
+						text="-2020-12-HSJD" />
+					<Text
+						text="000" />
+                    <Text
+						text="00" />
+                    <Text
+						text="Document description1" />        
+					
+				</cells>
+                
+			</ColumnListItem>
+            <ColumnListItem vAlign="Middle">
+				
+                <cells>
+					<ObjectIdentifier
+						title="DSN"
+						text=""/>
+					<Text
+						text="-2020-11-HSD" />
+					<Text
+						text="001" />
+                    <Text
+						text="01" />
+                    <Text
+						text="Document desription2" />        
+					
+				</cells>
+			</ColumnListItem>
+		</items>
+	</Table>
+</core:FragmentDefinition>

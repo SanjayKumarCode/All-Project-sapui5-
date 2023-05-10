@@ -1,0 +1,83 @@
+<core:FragmentDefinition
+   xmlns:mvc="sap.ui.core.mvc"
+	xmlns:core="sap.ui.core"
+	xmlns:tnt="sap.tnt"
+	xmlns="sap.m" >
+   <Table id="idProductsTable3"
+		inset="false">
+		
+		<columns>
+			<Column
+				width="12em">
+				<Text text="Task ID" />
+			</Column>
+			<Column
+				demandPopin="true">
+				<Text text="Task Code Text" />
+			</Column>
+            <Column
+				demandPopin="true">
+				<Text text="Task Text" />
+			</Column>
+            <Column
+				demandPopin="true">
+				<Text text="Status" />
+			</Column>
+            <Column
+				demandPopin="true">
+				<Text text="Responsible" />
+			</Column>
+			
+		</columns>
+		<items>
+			<ColumnListItem vAlign="Middle">
+				<cells>
+					<ObjectIdentifier
+						title="0001"
+						text=""/>
+					<Text
+						text="Task code text" />
+					<Text
+						text="Task text" />
+                    <tnt:InfoLabel id="il10" text="Released" colorScheme="1" displayOnly= "true" />
+                    <Text
+						text="User Name (Z1234)" />        
+					
+				</cells>
+                
+			</ColumnListItem>
+            <ColumnListItem vAlign="Middle">
+				<cells>
+					<ObjectIdentifier
+						title="0002"
+						text=""/>
+					<Text
+						text="Task code text" />
+					<Text
+						text="Task text" />
+                    <tnt:InfoLabel id="il11" text="Released" colorScheme="1" displayOnly= "true" />
+                    <Text
+						text="User Name (Z123)" />        
+					
+				</cells>
+                
+			</ColumnListItem>
+            <ColumnListItem vAlign="Middle">
+				<cells>
+					<ObjectIdentifier
+						title="0003"
+						text=""/>
+					<Text
+						text="Task code text" />
+					<Text
+						text="Task text" />
+                    <tnt:InfoLabel id="il12" text="In Progress" colorScheme="1" displayOnly= "true" />
+                    <Text
+						text="User Name 2 (USR2)" />        
+					
+				</cells>
+                
+			</ColumnListItem>
+		</items>
+	</Table>
+</core:FragmentDefinition>

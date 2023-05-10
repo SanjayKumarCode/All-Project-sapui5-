@@ -1,0 +1,39 @@
+<mvc:View controllerName="com.snflk.proc.snflkprocsupplierapprovalwf.controller.Detail"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="detailPage">
+	<headerContent>
+	<Title title="Request Number"/><Title title="{app>RequestID}"/>
+			<VBox><Label text="" />
+			</VBox>
+		</headerContent>
+        <content>
+         <Table
+				id="ItemTable"
+				itemPress="onListItemPress"
+				inset="false"
+				items="{path: 'app>EDIT_ASSESSMENT_DETAIL'}"
+				width="auto">
+				
+                <columns>
+					<Column width="12em" >
+						<Text text="" visible="false"/>
+					</Column>
+                    <Column width="12em">
+						<Text text=""  visible="false" />
+					</Column>				
+				</columns>
+				<items>
+					<ColumnListItem>
+						<cells>
+							<Label text="{app>TEXT}" />
+                            <Input value="{app>VALUE}"
+								description="{app>DATATYPE}" class="sapUiTinyMarginBeginEnd"
+								editable="false"/>		
+						</cells>
+					</ColumnListItem>
+				</items>
+    </Table>
+        </content>
+    </Page>
+</mvc:View>
